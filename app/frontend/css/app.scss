@@ -1,0 +1,21 @@
+// Your applications SCSS file
+
+$base-font-family: "Nunito", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-line-height: 1.5;
+$base-font-weight: 300;
+
+$spacing-unit:     32px;
+
+$red:              #ff4848;
+$purple:           #84657b;
+$blue:             #2a7ae2;
+
+$text-color:       #111;
+$background-color: #f7f6f3;
+
+$content-width:    800px;
+
+@import "base";
+@import "layout";
+@import "syntax-highlighting";

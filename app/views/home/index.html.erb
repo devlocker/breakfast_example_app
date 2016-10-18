@@ -1,0 +1,110 @@
+<div class="homepage-hero">
+  <div>
+    <%= image_tag "breakfast-illustration.png", width: 300 %>
+  </div>
+
+  <h1>
+    BREAKFAST
+    <small>Rails + Brunch.io = ❤️ </small>
+  </h1>
+  <h2>Integrate modern Javascript tooling into your Rails project.</h2>
+</div>
+
+<div class="homepage-menu">
+  <a href="#">Getting Started</a href>
+  <a href="#">Configuration</a href>
+  <a href="#" target="_blank">Source Code</a>
+</div>
+
+<div>
+  <h2>Features</h2>
+  <div class="feature-example">
+    <div class="description">
+      <h3>ES6 Syntax</h3>
+      Get support for all the new <a href="https://github.com/lukehoban/es6features">ES6 Syntax</a>. Imports, exports, arrows, classes all work out of the cereal box.
+    </div>
+
+    <div class="example">
+<%= raw markdown(<<~CODE
+~~~
+import HelloWorld from "./hello"
+
+let App = {
+  init() {
+    HelloWorld.sayHello();
+  }
+};
+
+module.exports = App;
+~~~
+CODE
+) %>
+    </div>
+  </div>
+
+  <div class="feature-example">
+    <div class="description">
+      <h3>NPM Integration</h3>
+      Manage the frontend dependencies of your project with NPM. No more
+      copying or downloading unversioned scripts into the vendor folder.
+    </div>
+
+    <div class="example">
+<%= raw markdown(<<~CODE
+~~~
+{
+  "devDependencies": {
+    "babel-brunch": "~6.0.0",
+    "brunch": "~2.8.2",
+    "css-brunch": "^2.6.1",
+    "javascript-brunch": "~1.8.0",
+    "sass-brunch": "~2.6.3",
+  },
+  "dependencies": {
+    "actioncable": "^5.0.0",
+    "bootstrap": "^3.3.7",
+    "breakfast-rails": "0.0.7",
+    "jquery": "^3.1.0",
+    "turbolinks": "^5.0.0"
+  }
+}
+~~~
+CODE
+) %>
+    </div>
+  </div>
+
+  <div class="feature-example">
+    <div class="description">
+      <h3>Live Reloading</h3>
+      <p>
+        Have the browser automatically reload CSS, JS or HTML on save.  With
+        the incremental builds provided by <a href="http://brunch.io">Brunch</a>
+        watch changes propagate to the browser with speed.
+      </p>
+      <p>
+        No more alt-tab + ⌘-r
+      </p>
+    </div>
+
+    <div class="example">
+      <%= image_tag "live-reload-example-1.gif", width: 300 %>
+    </div>
+  </div>
+
+  <div class="feature-example">
+    <div class="description">
+      <h3>Updates in the browser</h3>
+      <p>
+        Get updates right in the browser. See build information and errors on
+        the screen.
+      </p>
+    </div>
+
+    <div class="example">
+      <%= image_tag "live-reload-example-2.gif", width: 300 %>
+    </div>
+  </div>
+
+  <div id="react-example"></div>
+</div>
