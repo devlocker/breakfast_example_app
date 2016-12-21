@@ -73,6 +73,7 @@ GEM
     nio4r (1.2.1)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
+    pg (0.18.4)
     posix-spawn (0.3.11)
     puma (3.6.0)
     pygments.rb (0.6.3)
@@ -145,6 +146,7 @@ DEPENDENCIES
   byebug
   jbuilder (~> 2.5)
   listen
+  pg
   puma (~> 3.0)
   pygments.rb
   rails (~> 5.0.0, >= 5.0.0.1)
@@ -155,5 +157,8 @@ DEPENDENCIES
   tzinfo-data
   web-console
 
+RUBY VERSION
+   ruby 2.3.1p112
+
 BUNDLED WITH
-   1.12.5
+   1.13.6

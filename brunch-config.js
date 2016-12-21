@@ -15,6 +15,11 @@ module.exports = {
     babel: {
       presets: ['es2015', 'react']
     },
+    postcss: {
+      processors: [
+        require('autoprefixer')(['last 8 versions']),
+      ]
+    }
   },
 
   paths: {
