@@ -1,24 +1,25 @@
 source 'https://rubygems.org'
-ruby "2.3.1"
 
-gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
+ruby '2.4.1'
 
-gem 'puma', '~> 3.0'
-gem 'jbuilder', '~> 2.5'
+gem 'rails'
+
+gem 'puma'
+gem 'jbuilder'
 gem 'redcarpet'
 gem 'pygments.rb'
-gem 'breakfast', ">= 0.3.0"
+gem 'breakfast'
 
 group :development, :test do
   gem 'byebug', platform: :mri
 end
 
 group :development do
-  gem 'sqlite3'
-  gem 'web-console'
   gem 'listen'
   gem 'spring'
   gem 'spring-watcher-listen'
+  gem 'sqlite3'
+  gem 'web-console'
 end
 
 group :production do
